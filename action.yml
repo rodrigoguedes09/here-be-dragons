@@ -1,0 +1,62 @@
+name: 'here-be-dragons'
+description: 'Draw your repository as a fantasy map where dragons mark the hotspots. Keeps an SVG fresh for your README.'
+author: 'Rodrigo Guedes'
+branding:
+  icon: 'map'
+  color: 'red'
+
+inputs:
+  svg:
+    description: 'Where to write the map (SVG), relative to the repository root.'
+    required: false
+    default: '.github/realm.svg'
+  theme:
+    description: 'parchment or midnight.'
+    required: false
+    default: 'parchment'
+  summary:
+    description: 'Write the dragons, quests and chronicle to the job summary.'
+    required: false
+    default: 'true'
+  args:
+    description: 'Extra arguments for here-be-dragons, e.g. --exclude "docs/**".'
+    required: false
+    default: ''
+  version:
+    description: 'Version of here-be-dragons to run.'
+    required: false
+    default: 'latest'
+
+outputs:
+  svg:
+    description: 'Path of the written SVG.'
+    value: ${{ inputs.svg }}
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Check history depth
+      shell: bash
+      run: |
+        if [ "$(git rev-parse --is-shallow-repository)" = "true" ]; then
+          echo "::warning title=here-be-dragons::Shallow clone detected. Use actions/checkout with fetch-depth: 0 so the map sees the whole history."
+        fi
+    - name: Draw the realm
+      shell: bash
+      env:
+        HBD_SVG: ${{ inputs.svg }}
+        HBD_THEME: ${{ inputs.theme }}
+        HBD_VERSION: ${{ inputs.version }}
+        HBD_ARGS: ${{ inputs.args }}
+      run: |
+        # shellcheck disable=SC2086
+        npx -y "here-be-dragons@${HBD_VERSION}" --svg "$HBD_SVG" --theme "$HBD_THEME" -o "$RUNNER_TEMP/here-be-dragons" --no-open $HBD_ARGS
+    - name: Job summary
+      if: ${{ inputs.summary == 'true' }}
+      shell: bash
+      env:
+        HBD_VERSION: ${{ inputs.version }}
+        HBD_ARGS: ${{ inputs.args }}
+      run: |
+        # shellcheck disable=SC2086
+        npx -y "here-be-dragons@${HBD_VERSION}" --md $HBD_ARGS >> "$GITHUB_STEP_SUMMARY"

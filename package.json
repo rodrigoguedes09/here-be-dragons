@@ -1,0 +1,53 @@
+{
+  "name": "here-be-dragons",
+  "version": "1.0.0",
+  "description": "Turn any git repository into a fantasy map. The dragons are real: they mark your hotspots.",
+  "type": "module",
+  "bin": {
+    "here-be-dragons": "bin/cli.js",
+    "hbd": "bin/cli.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test",
+    "gallery": "node scripts/gallery.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "keywords": [
+    "git",
+    "visualization",
+    "map",
+    "fantasy-map",
+    "code-visualization",
+    "hotspots",
+    "technical-debt",
+    "code-analysis",
+    "codescene",
+    "bus-factor",
+    "cli",
+    "ai-agents",
+    "claude-code",
+    "agent-skills"
+  ],
+  "author": "Rodrigo Guedes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigoguedes09/here-be-dragons.git"
+  },
+  "homepage": "https://github.com/rodrigoguedes09/here-be-dragons#readme",
+  "bugs": "https://github.com/rodrigoguedes09/here-be-dragons/issues"
+}

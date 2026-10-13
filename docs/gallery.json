@@ -1,0 +1,167 @@
+{
+  "colinhacks-zod": {
+    "slug": "colinhacks-zod",
+    "name": "colinhacks/zod",
+    "files": 632,
+    "loc": 110320,
+    "commits": 2929,
+    "authors": 587,
+    "dragons": 6,
+    "aiShare": 0.05186775344089267,
+    "top": {
+      "name": "Sylokesh the Restless",
+      "path": "packages/zod/src/v3/types.ts"
+    },
+    "generatedAt": "2026-10-13T02:41:26.765Z"
+  },
+  "django-django": {
+    "slug": "django-django",
+    "name": "django/django",
+    "files": 3615,
+    "loc": 602859,
+    "commits": 34419,
+    "authors": 3315,
+    "dragons": 10,
+    "aiShare": 0.00003898771643259146,
+    "top": {
+      "name": "Ashiphyr the Colossal",
+      "path": "django/db/models/sql/query.py"
+    },
+    "generatedAt": "2026-10-13T02:41:42.003Z"
+  },
+  "expressjs-express": {
+    "slug": "expressjs-express",
+    "name": "expressjs/express",
+    "files": 198,
+    "loc": 21982,
+    "commits": 5696,
+    "authors": 395,
+    "dragons": 3,
+    "aiShare": 0.00016752523348829418,
+    "top": {
+      "name": "Azythas the Restless",
+      "path": "lib/response.js"
+    },
+    "generatedAt": "2026-10-13T02:41:44.364Z"
+  },
+  "facebook-react": {
+    "slug": "facebook-react",
+    "name": "facebook/react",
+    "files": 7005,
+    "loc": 899885,
+    "commits": 19121,
+    "authors": 1958,
+    "dragons": 10,
+    "aiShare": 0.0029020692175128985,
+    "top": {
+      "name": "Tyrlith the Unfinished",
+      "path": "packages/react-devtools-shared/src/backend/fiber/renderer.js"
+    },
+    "generatedAt": "2026-10-13T02:41:56.611Z"
+  },
+  "fastapi-fastapi": {
+    "slug": "fastapi-fastapi",
+    "name": "fastapi/fastapi",
+    "files": 2747,
+    "loc": 256008,
+    "commits": 7780,
+    "authors": 905,
+    "dragons": 3,
+    "aiShare": 0.00045980746577846377,
+    "top": {
+      "name": "Zyruzar the Restless",
+      "path": "fastapi/routing.py"
+    },
+    "generatedAt": "2026-10-13T02:42:02.858Z"
+  },
+  "pallets-flask": {
+    "slug": "pallets-flask",
+    "name": "pallets/flask",
+    "files": 217,
+    "loc": 26260,
+    "commits": 3829,
+    "authors": 854,
+    "dragons": 2,
+    "aiShare": 0,
+    "top": {
+      "name": "Sylygarde the Restless",
+      "path": "src/flask/sansio/app.py"
+    },
+    "generatedAt": "2026-10-13T02:42:05.053Z"
+  },
+  "rails-rails": {
+    "slug": "rails-rails",
+    "name": "rails/rails",
+    "files": 4460,
+    "loc": 574192,
+    "commits": 60000,
+    "authors": 6053,
+    "dragons": 10,
+    "aiShare": 0.003290711076470287,
+    "top": {
+      "name": "Rhamir the Restless",
+      "path": "actionpack/lib/action_dispatch/routing/mapper.rb"
+    },
+    "generatedAt": "2026-10-13T02:42:19.343Z"
+  },
+  "sveltejs-svelte": {
+    "slug": "sveltejs-svelte",
+    "name": "sveltejs/svelte",
+    "files": 9152,
+    "loc": 239500,
+    "commits": 9890,
+    "authors": 988,
+    "dragons": 7,
+    "aiShare": 0.008164580895845125,
+    "top": {
+      "name": "Vexygarde the Tangled",
+      "path": "packages/svelte/src/compiler/phases/2-analyze/index.js"
+    },
+    "generatedAt": "2026-10-13T02:42:24.593Z"
+  },
+  "tailwindlabs-tailwindcss": {
+    "slug": "tailwindlabs-tailwindcss",
+    "name": "tailwindlabs/tailwindcss",
+    "files": 516,
+    "loc": 151346,
+    "commits": 6057,
+    "authors": 376,
+    "dragons": 6,
+    "aiShare": 0.011237879319203073,
+    "top": {
+      "name": "Ignekesh the Restless",
+      "path": "packages/tailwindcss/src/utilities.ts"
+    },
+    "generatedAt": "2026-10-13T02:42:45.944Z"
+  },
+  "vitejs-vite": {
+    "slug": "vitejs-vite",
+    "name": "vitejs/vite",
+    "files": 2528,
+    "loc": 129288,
+    "commits": 9704,
+    "authors": 1359,
+    "dragons": 7,
+    "aiShare": 0.011009703933804326,
+    "top": {
+      "name": "Korulith the Colossal",
+      "path": "packages/vite/src/node/plugins/css.ts"
+    },
+    "generatedAt": "2026-10-13T02:42:50.884Z"
+  },
+  "vuejs-core": {
+    "slug": "vuejs-core",
+    "name": "vuejs/core",
+    "files": 644,
+    "loc": 157564,
+    "commits": 7186,
+    "authors": 680,
+    "dragons": 7,
+    "aiShare": 0,
+    "top": {
+      "name": "Drakesh the Restless",
+      "path": "packages/runtime-core/src/renderer.ts"
+    },
+    "generatedAt": "2026-10-13T02:42:54.714Z"
+  }
+}
