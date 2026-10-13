@@ -81,7 +81,7 @@ if (opt.version) {
 }
 
 const machine = opt.json || opt.md;
-const color = process.stderr.isTTY && !process.env.NO_COLOR;
+const color = Boolean(process.stderr.isTTY && !process.env.NO_COLOR);
 const say = (msg) => {
   if (!opt.quiet && !machine) process.stderr.write(msg);
 };
